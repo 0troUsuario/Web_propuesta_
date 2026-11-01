@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El pequeño arcade</title>
+    <meta
+      name="description"
+      content="Pequeña plataforma arcade con tres minijuegos y una sorpresa especial."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <button id="menu-button" class="nav-button hidden" type="button">Menú</button>
+        <div class="brand-mini">El pequeño arcade</div>
+        <div class="audio-controls">
+          <button id="sound-toggle" class="small-button" type="button" aria-label="Activar música"></button>
+          <input id="volume-control" type="range" min="0" max="100" value="95" aria-label="Volumen" />
+        </div>
+      </header>
+
+      <main id="screen" class="screen" aria-live="polite"></main>
+    </div>
+
+    <button id="secret-button" class="secret-button hidden" type="button" aria-label="Sorpresa oculta">
+      ...
+    </button>
+
+    <div id="secret-overlay" class="secret-overlay hidden" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
